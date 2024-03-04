@@ -1,0 +1,32 @@
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+
+
+export class TurnoService{
+
+  private URL = 'http://localhost:3000/api'
+
+  constructor (private http: HttpClient) {}
+
+  getTurno(): Observable<any> {
+    return this.http.get(this.URL);
+  }
+
+  getTurnoById(id: string): Observable<any> {
+    return this.http.get(`${this.URL}/${id}`);
+  }
+
+  crearTurno(turnoData: any): Observable<any> {
+    return this.http.post(this.URL, turnoData);
+  }
+
+  actualizarTurno(id: string, turnoData: any): Observable<any> {
+    return this.http.put(`${this.URL}/${id}`, turnoData);
+  }
+  
+  eliminarTurno(id: string): Observable<any> {
+    return this.http.delete(`${this.URL}/${id}`);
+  }
+
+}
