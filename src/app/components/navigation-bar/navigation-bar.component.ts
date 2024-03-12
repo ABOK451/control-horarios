@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './navigation-bar.component.css'
 })
 export class NavigationBarComponent {
+  
+  
 
 }

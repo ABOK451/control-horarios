@@ -1,0 +1,192 @@
+   .material-symbols-outlined{
+      display: flex;
+      margin-left: auto;
+    }
+
+    .acc{
+      text-decoration: none;
+      right: 1.6%;
+      height: 15%;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+    .not {
+      display: inline-block;
+      background-color: #011245;
+      position: fixed;
+      right: 0;
+      padding: 12px 30px;
+      text-decoration: none;
+  }
+  .app {
+      font-weight: 800;
+      font-size: 125%;
+    }
+    .top-logo {
+      background-color: #ffffff;
+      width: auto;
+      height: 90px;
+      display: flex;
+      margin: auto;
+    }
+  
+    .top-bar, .sub-bar {
+      background-color: #011245;
+      color: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: 10%;
+      margin: auto;
+      justify-content: space-between;
+  }
+  
+    .menu {
+      justify-content: center;
+      list-style: none;
+      display: flex;
+  }
+
+  .menu-ver-acc{
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    right: 0;
+    padding: 0%;
+    background-color: #0098d4;
+    border: 1px solid black;
+    top: 70px;
+    z-index: 1000;
+  }
+
+  .menu-ver-acc>li>a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .menu li:hover .menu-ver-acc{
+    display: block;
+  }
+
+  .menu-ver{
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 0.5% 2.3%;
+    background-color: #0098d4;
+    border: 1px solid black;
+    top: 45px;
+    z-index: 1000;
+  }
+  .menu-ver>li>a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+   
+  .menu-ver-acc>li:hover,
+  .menu-ver>li:hover{
+    background-color: #00b1ff;
+  }
+
+  .menu li:hover .menu-ver{
+    display: block;
+  }
+
+  .boton-adm,
+  .boton-soli,
+  .boton {
+      display: inline-block;
+      padding: 18px 40px;
+      background-color: #011245;
+      color: white;
+      text-decoration: none;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: none;
+  }
+  
+  .boton-right {
+      display: inline-block;
+      padding: 18px 40px;
+      background-color: #011245;
+      color: white;
+      text-decoration: none;
+      border-left: 2px solid white;
+      border-right: 4px solid white;
+      border-top: none;
+      border-bottom: none;
+  }
+  
+  .boton-left {
+      display: inline-block;
+      padding: 18px 40px;
+      background-color: #011245;
+      color: white;
+      text-decoration: none;
+      border-left: 4px solid white;
+      border-right: 2px solid white;
+      border-top: none;
+      border-bottom: none;
+  }
+  
+  .boton-adm:hover,
+  .boton-soli:hover,
+  .boton-right:hover,
+  .boton-left:hover,
+  .boton:hover {
+      background-color: #003366;
+  }
+
+
+  @media screen and (max-width: 690px) {
+    .boton-adm {
+        display: none; /* Oculta el botón "Solicitud" */
+    }
+    .menu {
+      flex-direction: column; /* Alinea los elementos en columna */
+      position: absolute;
+      top: 70px; /* Altura del menú cuando es desplegable */
+      right: 20px; /* Alineación a la derecha */
+      background-color: #011245;
+      z-index: 1;
+  }
+
+  .menu a {
+      display: block;
+      padding: 12px 20px;
+      border-bottom: 1px solid white;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .menu a:hover {
+      background-color: #003366;
+  }
+
+  .not {
+      position: relative;
+  }
+
+
+}
+
+/* Ocultar el botón "Administración" cuando el ancho de la pantalla es igual o menor a 900px */
+@media screen and (max-width: 900px) {
+    .boton-soli {
+        display: none; /* Oculta el botón "Administración" */
+    }
+}
+
+/* Ocultar el botón "Calendario" cuando el ancho de la pantalla es igual o menor a 1200px */
+@media screen and (max-width: 1040px) {
+    .boton {
+        display: none; /* Oculta el botón "Calendario" */
+    }
+}
+
+  
