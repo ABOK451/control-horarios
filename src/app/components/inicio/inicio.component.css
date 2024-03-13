@@ -1,0 +1,25 @@
+a{
+    color: black;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 34px; 
+    margin: 1px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, color */
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 50px;
+    margin: 1px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, color */
+    z-index: 2;
+    margin-bottom: 50%; /* Separar el texto del borde inferior de la pantalla */
+    position: relative;
+    top: 150px; /* Mover hacia abajo */
+}

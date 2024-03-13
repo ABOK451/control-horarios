@@ -1,7 +1,7 @@
 <style>
   /* CSS */
  .content {
-  margin-top: 66px;
+  margin-top: 66px; 
   }
  .material-symbols-outlined{
     display: flex;
@@ -10,11 +10,13 @@
     align-items: center;
   }
 .app {
-    font-family: "M PLUS Rounded 1c",
+    font-family: "M PLUS Rounded 1c", 
     sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 20px;
+    position: relative; /* Establecer la posición relativa */
+z-index: 2; /* Asegurar que esté encima del fondo azul */
   }
   .top-logo {
     background-color: #ffffff;
@@ -22,9 +24,11 @@
     width: auto;
     height: 90px;
     display: flex;
-    margin: auto;
+    margin: auto; 
+    position: relative; /* Establecer la posición relativa */
+z-index: 2; /* Asegurar que esté encima del fondo azul */
   }
-
+  
   .top-bar, .sub-bar {
     background-color: #011245;
     color: white;
@@ -33,47 +37,55 @@
     right: 0;
     width: auto;
     height: 66px;
-    margin: auto;
+    margin: auto; 
     justify-content: space-between;
+    position: relative; /* Establecer la posición relativa */
+    z-index: 2; /* Asegurar que esté encima del fondo azul */
 }
 
   .menu {
-    text-align: center;
+    text-align: center; 
+    position: relative; /* Establecer la posición relativa */
+    z-index: 2; /* Asegurar que esté encima del fondo azul */
 }
 
 .boton {
-
+    
     display: inline-block;
     padding: 18px 40px;
     background-color: #011245;
     color: white;
     text-decoration: none;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    border-left: 2px solid white; 
+    border-right: 2px solid white; 
     border-bottom: none;
+    position: relative; /* Establecer la posición relativa */
+    z-index: 2; /* Asegurar que esté encima del fondo azul */
 }
 
 .boton-right {
     display: inline-block;
     padding: 18px 40px;
-    background-color: #011245;
+    background-color: #011245; 
     color: white;
     text-decoration: none;
-    border-left: 2px solid white;
-    border-right: 4px solid white;
+    border-left: 2px solid white; 
+    border-right: 4px solid white; 
     border-top: none;
-    border-bottom: none;
+    border-bottom: none; 
+    position: relative; /* Establecer la posición relativa */
+    z-index: 2; /* Asegurar que esté encima del fondo azul */
 }
 
 .boton-left {
     display: inline-block;
     padding: 18px 40px;
-    background-color: #011245;
+    background-color: #011245; 
     color: white;
     text-decoration: none;
-    border-left: 4px solid white;
-    border-right: 2px solid white;
-    border-top: none;
+    border-left: 4px solid white; 
+    border-right: 2px solid white; 
+    border-top: none; 
     border-bottom: none;
 }
 
@@ -81,7 +93,43 @@
 .boton-left:hover,
 .boton:hover {
     background-color: #003366;
+    position: relative; /* Establecer la posición relativa */
+    z-index: 2; /* Asegurar que esté encima del fondo azul */
 }
+/* Estilos para el contenedor del menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilos para el contenido del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Estilos para las opciones del menú desplegable */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilo para resaltar la opción seleccionada */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 </style>
 
@@ -104,8 +152,16 @@
     <div class="app">
         <div class="top-bar">
             <div class="menu">
-                <a href="/home" class="boton-left">Inicio</a>
-                <a href="#" class="boton">Administración</a>
+                <a href="/inicio" class="boton-left">Inicio</a>
+                <div class="dropdown">
+                  <a href="#" class="boton">Administración</a>
+                  <div class="dropdown-content">
+                    <a href="#">Opción 1</a>
+                    <a href="#">Opción 2</a>
+                    <a href="#">Opción 3</a>
+                  </div>
+                </div>
+                
                 <a href="#" class="boton">Solicitud</a>
                 <a href="#" class="boton">Calendario</a>
                 <a href="#" class="boton-right">Salir</a>
