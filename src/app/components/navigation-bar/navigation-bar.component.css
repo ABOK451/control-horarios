@@ -17,7 +17,7 @@
       background-color: #011245;
       position: fixed;
       right: 0;
-      padding: 12px 30px;
+      padding: 0.6em 1.5em;
       text-decoration: none;
   }
   .app {
@@ -35,13 +35,13 @@
     .top-bar, .sub-bar {
       background-color: #011245;
       color: white;
-      position: absolute;
+      position: fixed;
       left: 0;
       right: 0;
       width: auto;
-      height: 10%;
       margin: auto;
       justify-content: space-between;
+      z-index: 100;
   }
   
     .menu {
@@ -52,6 +52,7 @@
 
   .menu-ver-acc{
     border-radius: 10px;
+    position: fixed;
     position: absolute;
     display: none;
     list-style: none;
@@ -73,6 +74,7 @@
   }
 
   .menu-ver{
+    position: fixed;
     border-radius: 10px;
     position: absolute;
     display: none;
@@ -101,7 +103,7 @@
   .boton-soli,
   .boton {
       display: inline-block;
-      padding: 18px 40px;
+      padding: 0.9em 2em;
       background-color: #011245;
       color: white;
       text-decoration: none;
@@ -112,7 +114,7 @@
   
   .boton-right {
       display: inline-block;
-      padding: 18px 40px;
+      padding: 0.9em 2em;
       background-color: #011245;
       color: white;
       text-decoration: none;
@@ -124,7 +126,7 @@
   
   .boton-left {
       display: inline-block;
-      padding: 18px 40px;
+      padding: 0.9em 2em;
       background-color: #011245;
       color: white;
       text-decoration: none;
@@ -153,7 +155,7 @@
       top: 70px; /* Altura del menú cuando es desplegable */
       right: 20px; /* Alineación a la derecha */
       background-color: #011245;
-      z-index: 1;
+      z-index: 100;
   }
 
   .menu a {
